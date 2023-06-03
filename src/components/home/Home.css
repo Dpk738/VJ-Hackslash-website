@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: url("./stream-binary-code-design_53876-97406.avif") no-repeat center/cover;
+  background-attachment: fixed;
+  
+  height: 730px;
+}
+
+body{
+  background:#0b1d2a;
+}
+
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+}
+
+.arrows path {
+  stroke: #d7b0ff;
+  fill: transparent;
+  stroke-width: 1px;  
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+  animation-delay:-1s;
+  -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay:-0.5s;
+  -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 { 
+  animation-delay:0s;
+  -webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+.logo {
+  border-radius: 8px;
+  padding-top: 120px;
+  padding-bottom: 30px;
+  color: rgb(255, 255, 255);
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo img {
+  width: 200px;
+  
+}
+
+.specifications{
+  background-color: rgb(0, 0, 0);
+}
+
+.features{
+  background-color: rgb(0, 0, 0);
+}
+
+.objectives{
+  background-color: black;
+}
+.column {
+  float: left;
+  
+  padding: 0 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+  }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card{
+  padding: 20px;
+  color: rgb(223, 181, 255);
+  background-color: #1b1b1b;
+  border-radius: 30px;
+  max-width: 350px;
+  max-height: 240px;
+  min-height: 200px;
+  min-width: 130px;
+  margin: 20px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
