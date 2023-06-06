@@ -11,7 +11,7 @@ const Home = () => {
         const cardTop = card.getBoundingClientRect().top;
         const cardBottom = card.getBoundingClientRect().bottom;
 
-        // Add the corresponding animation class based on the card's position
+        
         if (cardTop < window.innerHeight && cardBottom >= 0) {
           card.classList.add(getAnimationClass(card));
         } else {
@@ -20,10 +20,10 @@ const Home = () => {
       });
     };
 
-    // Attach the scroll event listener
+    
     window.addEventListener('scroll', handleScroll);
 
-    // Clean up the event listener on component unmount
+    
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
